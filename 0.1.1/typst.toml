@@ -1,0 +1,15 @@
+[package]
+name = "tim_resume"
+version = "0.1.1"
+entrypoint = "lib.typ"
+repository = "https://github.com/typst/templates"
+authors = ["Timothy Hister"]
+license = "MIT-0"
+description = "The typst template for my resume"
+keywords = ["resume", "cover letter"]
+
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"
