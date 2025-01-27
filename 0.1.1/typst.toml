@@ -1,5 +1,5 @@
 [package]
-name = "tim_resume"
+name = "tim-resume"
 version = "0.1.1"
 entrypoint = "lib.typ"
 repository = "https://github.com/typst/templates"
