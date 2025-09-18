@@ -2,4 +2,4 @@ This is the template I use for my resume and cover letter. I haven't bothered pu
 
 You can adjust the variables at the top as you see fit.
 
-It is super annoying that `typst compile` [apparently won't work](https://github.com/typst/typst/issues/4718) if you install Typst via Snap, which I did, so for the 99% of the time you want to export as PDF, just use VS Code. However, in the annoying times when you are required to make a text resume, you can just make a pdf and convert it with pdftotext (but you'll lose all the links, which is super irritating). I can probably fix all this in the future but it's not worth the investment at this point in time.
+Note: I wrote a little bash script that adjusts the file, and so, in case you wish to export the resume to .md (which could be useful for jobs that require text-only resumes). 
