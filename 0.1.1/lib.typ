@@ -41,6 +41,7 @@
   TN_visa: false,
   show_line_of_links: true,
   show_lines_in_heading: true,
+  show_footer: true,
   body
 ) = {
   set document(author: my_name, title: document_name + "of" + my_name)
@@ -49,11 +50,13 @@
     paper: "us-letter",
     margin: margins,
     footer: {
-      align(center)[
-      #document_name of #my_name: Page #context counter(page).display("1 of 1", both: true)
+      if show_footer [
+        #align(center)[
+          #document_name of #my_name: Page #context counter(page).display("1 of 1", both: true)
+        ]
       ]
     }
-)
+  )
 
   text(font: "Alegreya Sans SC", size: 26pt)[*#my_name*] // Title
   text(font: "Source Sans Pro", fill: gray, size: 10pt)[ #my_job] // My Job
